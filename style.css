@@ -1,0 +1,368 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1e3c72;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* gradasi biru sama seperti wali kelas */
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #f8fafc; /* teks jadi putih kebiruan */
+}
+
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Bagian wali kelas */
+.wali {
+  background: #87ceeb;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* KM & WKM */
+.pengurus {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.km, .wkm {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+.km {
+  background: #a3f7b5;
+}
+.wkm {
+  background: #f7e3a3;
+}
+
+/* Daftar siswa */
+/* ======================
+   DAFTAR SISWA (FINAL)
+======================= */
+.siswa {
+  background: #1e3c72; /* tetap putih */
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  color: #1e293b;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.siswa h2 {
+  text-align: center;
+  color: #facc15; /* kuning emas */
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.grid-siswa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img.foto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 2px solid #000000; /* biru lembut */
+}
+
+/* Memory */
+.memory {
+  background: #042991;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.grid-memory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #333;
+}
+
+.foto-memory {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.deskripsi {
+  background: #f0f8ff;
+  padding: 15px 20px;
+  border-left: 6px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Animasi fade in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover animasi siswa */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Hover pada memory */
+.foto-memory {
+  transition: transform 0.4s ease;
+}
+.foto-memory:hover {
+  transform: scale(1.05);
+}
+
+.deskripsi {
+  background: #f0f8ff;
+  padding: 15px 20px;
+  border-left: 6px solid #3498db;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3e50; /* jangan sampai warnanya putih */
+}
+
+/* Animasi fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Efek Fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.foto, .foto-memory {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.5s;
+}
+
+.foto:hover, .foto-memory:hover {
+  transform: scale(1.05);
+}
+
+.grid-memory {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Animasi dasar */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Saat elemen terlihat */
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grid untuk daftar siswa */
+.grid-siswa {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 kolom */
+  gap: 15px; /* jarak antar kotak */
+  margin-top: 20px;
+}
+
+/* Card siswa */
+.card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Foto siswa */
+.card img.foto {
+  width: 100px;       /* semua foto lebar sama */
+  height: 100px;      /* semua foto tinggi sama */
+  object-fit: cover;  /* crop biar proporsional */
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background: #111827;
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 750px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #3b82f6;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #3b82f6;
+}
+
+.profile-info .jabatan {
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.profile-info .email {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 5px 0;
+}
+
+.profile-info .quote {
+  font-style: italic;
+  color: #fbbf24;
+  margin-top: 10px;
+}
+
+/* Section Background */
+.wali, .km, .wkm {
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* gradasi biru */
+  padding: 40px 20px;
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Judul tiap section */
+.wali h2, .km h2, .wkm h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
